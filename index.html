@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="leonardoasantos1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <main>
+        <div id="resultado"></div>
+        <button id="resetar" onclick="limpar()">AC</button>
+        <button id="voltarUm" onclick="voltar()">DEL</button>
+        <button id="dividir" onclick="inserir('/')">/</button>
+        <button id="multiplicar" onclick="inserir('*')">X</button><br>
+        <button id="sete" onclick="inserir(7)">7</button>
+        <button id="oito" onclick="inserir(8)">8</button>
+        <button id="nove" onclick="inserir(9)">9</button>
+        <button id="subtrair" onclick="inserir('-')">-</button><br>
+        <button id="quatro" onclick="inserir(4)">4</button>
+        <button id="cinco" onclick="inserir(5)">5</button>
+        <button id="seis" onclick="inserir(6)">6</button>
+        <button id="somar" onclick="inserir('+')">+</button><br>
+        <button id="um" onclick="inserir(1)">1</button>
+        <button id="dois" onclick="inserir(2)">2</button>
+        <button id="tres" onclick="inserir(3)">3</button>
+        <button id="calcular" onclick="calcular()">=</button><br>
+        <button id="zero" onclick="inserir(0)">0</button>
+        <button id="ponto" onclick="inserir('.')">.</button>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

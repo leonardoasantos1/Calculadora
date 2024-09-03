@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fundo: #f1f1f1;
+    --cor-fundo-calculadora: #262626;
+    --cor-botao: #ddd;
+    --cor-visor: #384e34;
+    --cor-botao-calcular: #e04747;
+    --cor-botoes: #f1f1f1;
+    --text-botoes: #262626;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS';
+    flex-direction: column;
+}
+
+main {
+    background-color: var(--cor-fundo-calculadora);
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 5px;
+    position: relative;
+}
+
+button {
+    width: 70px;
+    height: 45px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: none;
+    margin: 1px -1px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS';
+    background-color: var(--cor-botoes);
+    color: var(--text-botoes);
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#zero {
+    width: 143px;
+}
+
+#ponto {
+    margin-left: -2px;
+}
+
+#calcular {
+    height: 92px;
+    position: absolute;
+    right: 5px;
+}
+
+#resultado {
+    height: 50px;
+    font-size: 2rem;
+    color: var(--cor-botao);
+    text-align: end;
+    background-color: var(--cor-visor);
+    border-radius: 5px;
+    margin: 1px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+#calcular {
+    background-color: var(--cor-botao-calcular);
+}
